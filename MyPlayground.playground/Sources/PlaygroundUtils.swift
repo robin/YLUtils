@@ -13,5 +13,6 @@ public func viewWithPath(path: UIBezierPath, size: CGSize = CGSize(width: 300, h
     let layer = CAShapeLayer()
     layer.strokeColor = UIColor.whiteColor().CGColor
     layer.path = path.CGPath
+    layer.fillColor = UIColor.darkGrayColor().CGColor
     return viewWithLayer(layer, size: size)
 }
